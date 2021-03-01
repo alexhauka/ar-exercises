@@ -14,4 +14,6 @@ puts "enter a name for the new store:"
 input = gets.chomp
 
 
-# store = Store.create(name: "#{input}")
+store = Store.create(name: "#{input}")
+
+puts store.errors.full_messages
